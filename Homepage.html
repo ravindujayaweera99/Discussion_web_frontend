@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Homepage.css" />
+    <title>Homepage</title>
+  </head>
+  <body>
+    <nav>
+      <div class="left">
+        <img src="img/logo.png" alt="" />
+        <ul id="#menu">
+          <a href="Content-page/ContentPage.html"><li>Информирај се</li></a>
+          <a href="Discussion-Board/DiscussionBoard.html"><li>Дискусии</li></a>
+          <a href="Contact-page/ContactPage.html"><li>Контакт</li></a>
+          <a href="Profile-page/ProfilePage.html"><li>Профил</li></a>
+        </ul>
+      </div>
+
+      <div class="right">
+        <a href="Sign-In/SignIn.html"
+          ><button><img src="img/profile.png" alt="" />Најави се</button></a
+        >
+        <a href=""><img src="img/MK _ AL.png" alt="" /></a>
+        <a href=""><img src="img/search_icon.png" alt="" / id="search_icon"></a>
+        <img
+          src="img/hamburger-icon.png"
+          alt=""
+          id="hamburger-icon"
+          onclick="toggleMenu()"
+        />
+      </div>
+
+      <div class="menu" id="menu">
+        <ul>
+          <a href="Content-page/ContentPage.html"><li>Информирај се</li></a>
+          <a href="Discussion-Board/DiscussionBoard.html"><li>Дискусии</li></a>
+          <a href="Contact-page/ContactPage.html"><li>Контакт</li></a>
+          <a href="Profile-page/ProfilePage.html"><li>Профил</li></a>
+          <li>
+            <a href="Sign-In/SignIn.html"
+              ><button><img src="img/profile.png" alt="" />Најави се</button></a
+            >
+          </li>
+          <li>
+            <a href=""><img src="img/MK _ AL.png" alt="" /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="img/search_icon.png" alt="" / id="search_icon"></a
+            >
+          </li>
+          <li onclick="closeMenu()"><button>Close Menu</button></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero-section">
+      <img src="img/hero-image.png" />
+    </div>
+
+    <div class="content-section">
+      <h1>Информирај се и заштити се</h1>
+      <div class="content-container">
+        <div class="col-1" id="col">
+          <div class="top">
+            <h2>Научи сè што треба да знаеш</h2>
+            <img src="./img/col-1-vector.png" alt="" />
+          </div>
+          <div class="bottom">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+            <button>Дознај повеќе</button>
+          </div>
+        </div>
+        <div class="col-2" id="col">
+          <div class="top">
+            <h2>Вклучи се во дискусија</h2>
+            <img src="./img/col-2-vector.png" alt="" />
+          </div>
+          <div class="bottom">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+            <button>Дознај повеќе</button>
+          </div>
+        </div>
+        <div class="col-3" id="col">
+          <div class="top">
+            <h2>Следи го својот напредок</h2>
+            <img src="./img/col-3-vector.png" alt="" />
+          </div>
+          <div class="bottom">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+            <button>Дознај повеќе</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-col-1">
+        <img src="img/logo-white.png" alt="" id="logo-footer" />
+        <p>International Foundation for Electoral Systems (IFES)</p>
+        <div class="contact-details">
+          <div class="list-item">
+            <img src="img/phone.png" alt="" />
+            <p>+389-2-312-2288</p>
+          </div>
+          <div class="list-item">
+            <img src="img/email.png" alt="" />
+            <p>ifes.nmk@ifes.org</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-col-2">
+        <ul>
+          <li>Информирај се</li>
+          <li>Дискусии</li>
+          <li>Контакт - корисни линкови</li>
+          <li>Закон за заштита на личните податоци</li>
+        </ul>
+      </div>
+      <div class="footer-col-3">
+        <img src="img/MK _ AL-white.png" alt="" id="mkal" />
+        <div class="social-media">
+          <a href=""><img src="img/fb.png" alt="" /></a>
+          <a href=""><img src="img/ig.png" alt="" /></a>
+          <a href=""><img src="img/yt.png" alt="" /></a>
+          <a href=""><img src="img/tktok.png" alt="" /></a>
+        </div>
+        <div class="copyright">
+          <p>© All Rights Reserved. | safeblink.mk</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("menu").style.display = "block";
+      }
+
+      function closeMenu() {
+        document.getElementById("menu").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="DiscussionBoard.css" />
+    <title>Discussion Board</title>
+  </head>
+  <body>
+    <nav>
+      <div class="left">
+        <img src="img/logo.png" alt="" />
+        <ul id="#menu">
+          <a href="../Content-page/ContentPage.html"><li>Информирај се</li></a>
+          <a href="DiscussionBoard.html"
+            ><li>Дискусии</li></a
+          >
+          <a href="../Contact-page/ContactPage.html"><li>Контакт</li></a>
+          <a href="../Profile-page/ProfilePage.html"><li>Профил</li></a>
+        </ul>
+      </div>
+
+      <div class="right">
+        <a href="../Sign-In/SignIn.html"
+          ><button><img src="img/profile.png" alt="" />Најави се</button></a
+        >
+        <a href=""><img src="img/MK _ AL.png" alt="" /></a>
+        <a href=""><img src="img/search_icon.png" alt="" / id="search_icon"></a>
+        <img
+          src="img/hamburger-icon.png"
+          alt=""
+          id="hamburger-icon"
+          onclick="toggleMenu()"
+        />
+      </div>
+
+      <div class="menu" id="menu">
+        <ul>
+          <a href="../Content-page/ContentPage.html"><li>Информирај се</li></a>
+          <a href="DiscussionBoard.html"
+            ><li>Дискусии</li></a
+          >
+          <a href="../Contact-page/ContactPage.html"><li>Контакт</li></a>
+          <a href="../Profile-page/ProfilePage.html"><li>Профил</li></a>
+          <li>
+            <a href="../Sign-In/SignIn.html"
+              ><button><img src="img/profile.png" alt="" />Најави се</button></a
+            >
+          </li>
+          <li>
+            <a href=""><img src="img/MK _ AL.png" alt="" /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="img/search_icon.png" alt="" / id="search_icon"></a
+            >
+          </li>
+          <li onclick="closeMenu()"><button>Close Menu</button></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="discusstion-section">
+      <h1 id="discusstion-title">Табла за дискусии</h1>
+
+      <div class="discussion-wrapper">
+        <div class="col1">
+          <div class="new-discussion">
+            <input type="text" placeholder="Сподели искуство..." />
+            <div class="user-details">
+              <img src="./img/user.png" alt="" />
+              <p>Име Презиме</p>
+            </div>
+          </div>
+
+          <div class="discussion-content">
+            <div class="posted-discussion">
+              <p>
+                Лорем ипсум е едноставен модел на текст кој се користел во
+                печатарската индустрија. Лорем ипсум бил индустриски стандард
+                кој се користел како модел уште пред 1500 години, кога непознат
+                печатар зел кутија со букви и ги сложил на таков начин за да
+                направи примерок на книга. И не само што овој модел опстанал пет
+                векови туку почнал да се користи и во електронските медиуми, кој
+                се уште не е променет. Се популаризирал во 60-тите години на
+                дваесеттиот век со издавањето на збирка од страни во кои се
+                наоѓале Lorem Ipsum пасуси, а денес во софтверскиот пакет како
+                што е Aldus PageMaker во кој се наоѓа верзија на Lorem Ipsum.
+              </p>
+              <input type="text" placeholder="Сподели искуство..." />
+              <div class="user-details">
+                <img src="./img/user.png" alt="" />
+                <p>Име Презиме</p>
+              </div>
+              <div class="discussion-status">
+                <img src="img/plus-sign.png" alt="" />
+                <p><span>5</span> Коментари</p>
+                <p><span>84</span> Реакции</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="discussion-content">
+            <div class="posted-discussion">
+              <p>
+                Лорем ипсум е едноставен модел на текст кој се користел во
+                печатарската индустрија. Лорем ипсум бил индустриски стандард
+                кој се користел како модел уште пред 1500 години, кога непознат
+                печатар зел кутија со букви и ги сложил на таков начин за да
+                направи примерок на книга. И не само што овој модел опстанал пет
+                векови туку почнал да се користи и во електронските медиуми, кој
+                се уште не е променет. Се популаризирал во 60-тите години на
+                дваесеттиот век со издавањето на збирка од страни во кои се
+                наоѓале Lorem Ipsum пасуси, а денес во софтверскиот пакет како
+                што е Aldus PageMaker во кој се наоѓа верзија на Lorem Ipsum.
+              </p>
+              <input type="text" placeholder="Сподели искуство..." />
+              <div class="user-details">
+                <img src="./img/user.png" alt="" />
+                <p>Име Презиме</p>
+              </div>
+              <div class="discussion-status">
+                <img src="img/plus-sign.png" alt="" />
+                <p><span>5</span> Коментари</p>
+                <p><span>84</span> Реакции</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="discussion-content">
+            <div class="posted-discussion">
+              <p>
+                Лорем ипсум е едноставен модел на текст кој се користел во
+                печатарската индустрија. Лорем ипсум бил индустриски стандард
+                кој се користел како модел уште пред 1500 години, кога непознат
+                печатар зел кутија со букви и ги сложил на таков начин за да
+                направи примерок на книга. И не само што овој модел опстанал пет
+                векови туку почнал да се користи и во електронските медиуми, кој
+                се уште не е променет. Се популаризирал во 60-тите години на
+                дваесеттиот век со издавањето на збирка од страни во кои се
+                наоѓале Lorem Ipsum пасуси, а денес во софтверскиот пакет како
+                што е Aldus PageMaker во кој се наоѓа верзија на Lorem Ipsum.
+              </p>
+              <input type="text" placeholder="Сподели искуство..." />
+              <div class="user-details">
+                <img src="./img/user.png" alt="" />
+                <p>Име Презиме</p>
+              </div>
+              <div class="discussion-status">
+                <img src="img/plus-sign.png" alt="" />
+                <p><span>5</span> Коментари</p>
+                <p><span>84</span> Реакции</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col2">
+          <div class="discussion-content">
+            <div class="posted-discussion">
+              <p>
+                Лорем ипсум е едноставен модел на текст кој се користел во
+                печатарската индустрија. Лорем ипсум бил индустриски стандард
+                кој се користел како модел уште пред 1500 години, кога непознат
+                печатар зел кутија со букви и ги сложил на таков начин за да
+                направи примерок на книга. И не само што овој модел опстанал пет
+                векови туку почнал да се користи и во електронските медиуми, кој
+                се уште не е променет. Се популаризирал во 60-тите години на
+                дваесеттиот век со издавањето на збирка од страни во кои се
+                наоѓале Lorem Ipsum пасуси, а денес во софтверскиот пакет како
+                што е Aldus PageMaker во кој се наоѓа верзија на Lorem Ipsum.
+              </p>
+              <input type="text" placeholder="Сподели искуство..." />
+              <div class="user-details">
+                <img src="./img/user.png" alt="" />
+                <p>Име Презиме</p>
+              </div>
+              <div class="discussion-status">
+                <img src="img/plus-sign.png" alt="" />
+                <p><span>5</span> Коментари</p>
+                <p><span>84</span> Реакции</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="discussion-content">
+            <div class="posted-discussion">
+              <p>
+                Лорем ипсум е едноставен модел на текст кој се користел во
+                печатарската индустрија. Лорем ипсум бил индустриски стандард
+                кој се користел како модел уште пред 1500 години, кога непознат
+                печатар зел кутија со букви и ги сложил на таков начин за да
+                направи примерок на книга. И не само што овој модел опстанал пет
+                векови туку почнал да се користи и во електронските медиуми, кој
+                се уште не е променет. Се популаризирал во 60-тите години на
+                дваесеттиот век со издавањето на збирка од страни во кои се
+                наоѓале Lorem Ipsum пасуси, а денес во софтверскиот пакет како
+                што е Aldus PageMaker во кој се наоѓа верзија на Lorem Ipsum.
+              </p>
+              <input type="text" placeholder="Сподели искуство..." />
+              <div class="user-details">
+                <img src="./img/user.png" alt="" />
+                <p>Име Презиме</p>
+              </div>
+              <div class="discussion-status">
+                <img src="img/plus-sign.png" alt="" />
+                <p><span>5</span> Коментари</p>
+                <p><span>84</span> Реакции</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="discussion-content">
+            <div class="posted-discussion">
+              <p>
+                Лорем ипсум е едноставен модел на текст кој се користел во
+                печатарската индустрија. Лорем ипсум бил индустриски стандард
+                кој се користел како модел уште пред 1500 години, кога непознат
+                печатар зел кутија со букви и ги сложил на таков начин за да
+                направи примерок на книга. И не само што овој модел опстанал пет
+                векови туку почнал да се користи и во електронските медиуми, кој
+                се уште не е променет. Се популаризирал во 60-тите години на
+                дваесеттиот век со издавањето на збирка од страни во кои се
+                наоѓале Lorem Ipsum пасуси, а денес во софтверскиот пакет како
+                што е Aldus PageMaker во кој се наоѓа верзија на Lorem Ipsum.
+              </p>
+              <input type="text" placeholder="Сподели искуство..." />
+              <div class="user-details">
+                <img src="./img/user.png" alt="" />
+                <p>Име Презиме</p>
+              </div>
+              <div class="discussion-status">
+                <img src="img/plus-sign.png" alt="" />
+                <p><span>5</span> Коментари</p>
+                <p><span>84</span> Реакции</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="discussion-content">
+            <div class="posted-discussion">
+              <p>
+                Лорем ипсум е едноставен модел на текст кој се користел во
+                печатарската индустрија. Лорем ипсум бил индустриски стандард
+                кој се користел како модел уште пред 1500 години, кога непознат
+                печатар зел кутија со букви и ги сложил на таков начин за да
+                направи примерок на книга. И не само што овој модел опстанал пет
+                векови туку почнал да се користи и во електронските медиуми, кој
+                се уште не е променет. Се популаризирал во 60-тите години на
+                дваесеттиот век со издавањето на збирка од страни во кои се
+                наоѓале Lorem Ipsum пасуси, а денес во софтверскиот пакет како
+                што е Aldus PageMaker во кој се наоѓа верзија на Lorem Ipsum.
+              </p>
+              <input type="text" placeholder="Сподели искуство..." />
+              <div class="user-details">
+                <img src="./img/user.png" alt="" />
+                <p>Име Презиме</p>
+              </div>
+              <div class="discussion-status">
+                <img src="img/plus-sign.png" alt="" />
+                <p><span>5</span> Коментари</p>
+                <p><span>84</span> Реакции</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col3">
+          <div class="discussion-content">
+            <div class="posted-discussion">
+              <p>
+                Лорем ипсум е едноставен модел на текст кој се користел во
+                печатарската индустрија. Лорем ипсум бил индустриски стандард
+                кој се користел како модел уште пред 1500 години, кога непознат
+                печатар зел кутија со букви и ги сложил на таков начин за да
+                направи примерок на книга. И не само што овој модел опстанал пет
+                векови туку почнал да се користи и во електронските медиуми, кој
+                се уште не е променет. Се популаризирал во 60-тите години на
+                дваесеттиот век со издавањето на збирка од страни во кои се
+                наоѓале Lorem Ipsum пасуси, а денес во софтверскиот пакет како
+                што е Aldus PageMaker во кој се наоѓа верзија на Lorem Ipsum.
+              </p>
+              <input type="text" placeholder="Сподели искуство..." />
+              <div class="user-details">
+                <img src="./img/user.png" alt="" />
+                <p>Име Презиме</p>
+              </div>
+              <div class="discussion-status">
+                <img src="img/plus-sign.png" alt="" />
+                <p><span>5</span> Коментари</p>
+                <p><span>84</span> Реакции</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="discussion-content">
+            <div class="posted-discussion">
+              <p>
+                Лорем ипсум е едноставен модел на текст кој се користел во
+                печатарската индустрија. Лорем ипсум бил индустриски стандард
+                кој се користел како модел уште пред 1500 години, кога непознат
+                печатар зел кутија со букви и ги сложил на таков начин за да
+                направи примерок на книга. И не само што овој модел опстанал пет
+                векови туку почнал да се користи и во електронските медиуми, кој
+                се уште не е променет. Се популаризирал во 60-тите години на
+                дваесеттиот век со издавањето на збирка од страни во кои се
+                наоѓале Lorem Ipsum пасуси, а денес во софтверскиот пакет како
+                што е Aldus PageMaker во кој се наоѓа верзија на Lorem Ipsum.
+              </p>
+              <input type="text" placeholder="Сподели искуство..." />
+              <div class="user-details">
+                <img src="./img/user.png" alt="" />
+                <p>Име Презиме</p>
+              </div>
+              <div class="discussion-status">
+                <img src="img/plus-sign.png" alt="" />
+                <p><span>5</span> Коментари</p>
+                <p><span>84</span> Реакции</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="discussion-content">
+            <div class="posted-discussion">
+              <p>
+                Лорем ипсум е едноставен модел на текст кој се користел во
+                печатарската индустрија. Лорем ипсум бил индустриски стандард
+                кој се користел како модел уште пред 1500 години, кога непознат
+                печатар зел кутија со букви и ги сложил на таков начин за да
+                направи примерок на книга. И не само што овој модел опстанал пет
+                векови туку почнал да се користи и во електронските медиуми, кој
+                се уште не е променет. Се популаризирал во 60-тите години на
+                дваесеттиот век со издавањето на збирка од страни во кои се
+                наоѓале Lorem Ipsum пасуси, а денес во софтверскиот пакет како
+                што е Aldus PageMaker во кој се наоѓа верзија на Lorem Ipsum.
+              </p>
+              <input type="text" placeholder="Сподели искуство..." />
+              <div class="user-details">
+                <img src="./img/user.png" alt="" />
+                <p>Име Презиме</p>
+              </div>
+              <div class="discussion-status">
+                <img src="img/plus-sign.png" alt="" />
+                <p><span>5</span> Коментари</p>
+                <p><span>84</span> Реакции</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="discussion-content">
+            <div class="posted-discussion">
+              <p>
+                Лорем ипсум е едноставен модел на текст кој се користел во
+                печатарската индустрија. Лорем ипсум бил индустриски стандард
+                кој се користел како модел уште пред 1500 години, кога непознат
+                печатар зел кутија со букви и ги сложил на таков начин за да
+                направи примерок на книга. И не само што овој модел опстанал пет
+                векови туку почнал да се користи и во електронските медиуми, кој
+                се уште не е променет. Се популаризирал во 60-тите години на
+                дваесеттиот век со издавањето на збирка од страни во кои се
+                наоѓале Lorem Ipsum пасуси, а денес во софтверскиот пакет како
+                што е Aldus PageMaker во кој се наоѓа верзија на Lorem Ipsum.
+              </p>
+              <input type="text" placeholder="Сподели искуство..." />
+              <div class="user-details">
+                <img src="./img/user.png" alt="" />
+                <p>Име Презиме</p>
+              </div>
+              <div class="discussion-status">
+                <img src="img/plus-sign.png" alt="" />
+                <p><span>5</span> Коментари</p>
+                <p><span>84</span> Реакции</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-col-1">
+        <img src="../img/logo-white.png" alt="" id="logo-footer" />
+        <p>International Foundation for Electoral Systems (IFES)</p>
+        <div class="contact-details">
+          <div class="list-item">
+            <img src="../img/phone.png" alt="" />
+            <p>+389-2-312-2288</p>
+          </div>
+          <div class="list-item">
+            <img src="../img/email.png" alt="" />
+            <p>ifes.nmk@ifes.org</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-col-2">
+        <ul>
+          <li>Информирај се</li>
+          <li>Дискусии</li>
+          <li>Контакт - корисни линкови</li>
+          <li>Закон за заштита на личните податоци</li>
+        </ul>
+      </div>
+      <div class="footer-col-3">
+        <img src="../img/MK _ AL-white.png" alt="" id="mkal" />
+        <div class="social-media">
+          <a href=""><img src="../img/fb.png" alt="" /></a>
+          <a href=""><img src="../img/ig.png" alt="" /></a>
+          <a href=""><img src="../img/yt.png" alt="" /></a>
+          <a href=""><img src="../img/tktok.png" alt="" /></a>
+        </div>
+        <div class="copyright">
+          <p>© All Rights Reserved. | safeblink.mk</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("menu").style.display = "block";
+      }
+
+      function closeMenu() {
+        document.getElementById("menu").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
